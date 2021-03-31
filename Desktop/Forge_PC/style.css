@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap");
+
+
+/* page intro */
+
+.head {
+  margin: 3em;
+  margin-bottom: 6em;
+}
+
+.sub-title h1 {
+  font-family: "Jolly Lodger", cursive;
+  color: goldenrod;
+  font-size: 100px;
+  margin: 20px;
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+  font-size: 29px;
+  padding: 20px 400px;
+}
+/* page intro */
+
+/* configuator */
+.coloum-wrap {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+
+.coloum-wrap > div {
+  background-color: rgba(3, 3, 3, 0.774);
+  border-radius: 1em;
+  margin: 0 auto;
+  height: 33em;
+  width: 15em;
+  text-align: center;
+}
+
+.coloum-wrap > div > figure {
+  padding: 2em;
+  padding-left: 2.6em;
+}
+
+.config-title {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  font-size: 14px;
+}
+.config-title > h4 {
+  font-size: 26px;
+}
+
+.config h5{
+  font-size: 16px;
+}
+
+.config > p {
+  margin: 1em auto;
+  font-size: 14px;
+}
+
+.config-button {
+  text-align: center;
+  border: 1px solid rgba(47, 47, 47, 0.904);
+  border-radius: 1em;
+  background-color: rgba(47, 47, 47, 0.842);
+  margin: 2em auto;
+  margin-top: 4.5em;
+  padding: 0.7em;
+  width: 90%;
+  height: 3em;
+}
+.config-button > a {
+  text-decoration: none;
+}
+/* configuator */

@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #ccdbdc;
+  font-family: "PT Sans", sans-serif;
+}
+
+body {
+  background: url("./images/background.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* navbar */
+.menu-bar {
+  background: rgba(0, 0, 0, 0.577);
+  text-align: center;
+}
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  color: #ffffff;
+}
+.menu-bar ul li {
+  width: 10em;
+  margin: 15px;
+  padding: 15px;
+}
+.menu-bar ul li a {
+  text-decoration: none;
+  color: goldenrod;
+  font-weight: 700;
+}
+.active,
+.menu-bar ul li:hover {
+  background: rgba(34, 34, 34, 0.781);
+  border-radius: 3px;
+}
+.sub-menu {
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu {
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.577);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu ul {
+  display: block;
+  margin: 15px;
+}
+
+.menu-bar ul li:hover .sub-menu ul a {
+  width: 150px;
+  border-radius: 0;
+  text-align: left;
+}
+/* navbar */
+
+/* logo */
+.main-logo h1 {
+  font-family: "Jolly Lodger", cursive;
+  color: goldenrod;
+  text-align: center;
+  font-size: 400px;
+  margin: 2rem 0;
+}
+/* logo */
+
+/* sub nav */
+.selection {
+  padding: 2em;
+  border-radius: 5px;
+  transition: transform 0.2s;
+}
+
+.selection-wrap {
+  width: 77.5%;
+  margin: 0 auto;
+  display: grid;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  grid-template-columns: 500px 500px;
+  grid-auto-rows: 281px;
+  grid-gap: 1em;
+}
+
+.sub-nav-logo {
+  font-family: "Jolly Lodger", cursive;
+  color: goldenrod;
+  font-size: 50px;
+  text-align: center;
+}
+
+.selection:hover {
+  transform: scale(1.05);
+  background-color: rgb(0, 0, 0);
+}
+
+.selection a {
+  text-decoration: none;
+}
+.selection a div {
+  text-align: center;
+  margin: 3em;
+  padding: 1em;
+}
+
+/* sub nav */
+
+/* content */
+.content-wrap {
+  width: 75%;
+  margin: 8em auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content-wrap div {
+  padding: 5em;
+  text-align: center;
+}
+/* content */
+
+/* footer */
+footer {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.719), rgba(0, 0, 0, 0));
+  text-align: center;
+}
+
+.foot-contact ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.foot-contact ul li {
+  margin: 0 10px;
+}
+
+#top a {
+  text-decoration: none;
+}
+#copyright {
+  font-size: 12px;
+}
+/* footer */
+
+/* top animation*/
+.to-top {
+  color: rgb(98, 97, 97);
+  padding-top: 1.8em;
+  display: inline-block; /* or block */
+  position: relative;
+  border-color: rgb(98, 97, 97);
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  margin-bottom: 1em;
+}
+.to-top:before {
+  content: "▲";
+  font-size: 1.1em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -0.7em;
+  border: solid 0.13em rgb(98, 97, 97);
+  border-radius: 10em;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.3em;
+  border-color: inherit;
+  transition: transform 0.5s ease-in;
+}
+.to-top:hover {
+  color: pink;
+  border-color: pink;
+}
+.to-top:hover:before {
+  transform: rotate(360deg);
+}
+/* top animation*/
+
+/* button shadow */
+.button {
+  transition: box-shadow 0.3s;
+}
+.button :hover {
+  box-shadow: 0 0 20px goldenrod;
+  cursor: pointer;
+}
+/* button shadow */
+
+/* text shadow */
+.text {
+  transition: box-shadow 0.3s;
+}
+.text :hover {
+  box-shadow: 0 0 20px goldenrod;
+}
+/* text shadow */
+
+/* product animation */
+.item {
+  animation: MoveUpDown 4s linear infinite;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(-45px);
+  }
+}
+/* product animation */

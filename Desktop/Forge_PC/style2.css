@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap");
+
+/* title */
+.head {
+  margin: 3em;
+  margin-bottom: 6em;
+}
+
+.sub-title h1 {
+  font-family: "Jolly Lodger", cursive;
+  color: goldenrod;
+  font-size: 100px;
+  margin: 20px;
+  text-align: center;
+}
+/* title */
+
+/* configurator */
+.coloum-wrap {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  margin-bottom: 2em;
+}
+
+.coloum-wrap > div {
+  background-color: rgba(3, 3, 3, 0.774);
+  /* border: 1px solid rgba(3, 3, 3, 0.856); */
+  border-radius: 1em;
+  margin: 0 auto;
+  height: 35em;
+  width: 15em;
+  text-align: center;
+}
+
+.config-title {
+  margin-bottom: 3em;
+}
+
+.config-title > h4 {
+  font-size: 26px;
+}
+
+.config > p {
+  margin: 1em auto;
+  font-size: 13px;
+}
+
+.config > h6 {
+  font-size: 15px;
+}
+.config-button {
+  text-align: center;
+  border-radius: 1em;
+  background-color: rgba(47, 47, 47, 0.842);
+  margin: 2em auto;
+  margin-top: 3em;
+  padding: 0.7em;
+  width: 90%;
+  height: 3em;
+}
+.config-button > a {
+  text-decoration: none;
+}
+
+figure {
+  padding: 2em;
+}
+/* configurator */
+
+/* level rotation animation */
+.rotate {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+/* level rotation animation */

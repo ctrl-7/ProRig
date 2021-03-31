@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOG-IN | PRORIG</title>
+    <link rel="stylesheet" href="./../main.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- nav bar -->
+    <header>
+      <nav>
+        <div class="menu-bar">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li>
+              <a href="#">Desktops</a>
+              <div class="sub-menu">
+                <ul>
+                  <li>
+                    <a href="../Desktop/Prorig/prorig-index.html">PRORIG</a>
+                  </li>
+                  <li>
+                    <a href="../Desktop/Forge_PC/forge-index.html"
+                      >Forge A PC</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="../Laptop/index.html">Laptop</a></li>
+            <li>
+              <a href="../About_us/index.html">About-Us</a>
+            </li>
+            <li><a href="../Support/index.html">Support</a></li>
+            <li class="active">
+              <a href="../log_in/Login-in-index.html">Log-In</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- nav bar -->
+
+    <!-- title -->
+    <h1 id="title-Prorig" style="text-align: center">Log-In</h1>
+    <!-- title -->
+
+    <script>
+      function doValidation() {
+        let password1 = document.getElementById("password1").value;
+
+        if (password1 == "") {
+          document.getElementById("message1").innerHTML =
+            "*Please Fill Password*";
+          return false;
+        }
+
+        if (password1.length < 8) {
+          document.getElementById("message1").innerHTML =
+            "*Minimun 8 Character*";
+          return false;
+        }
+
+        if (password1.length > 20) {
+          document.getElementById("message1").innerHTML =
+            "*Maximum 20 Character*";
+          return false;
+        }
+      }
+
+      function doValidation2() {
+        let password2 = document.getElementById("password2").value;
+
+        if (password2 == "") {
+          document.getElementById("message2").innerHTML =
+            "*Please Fill Password*";
+          return false;
+        }
+
+        if (password2.length < 8) {
+          document.getElementById("message2").innerHTML =
+            "*Minimun 8 Character*";
+          return false;
+        }
+
+        if (password2.length > 20) {
+          document.getElementById("message2").innerHTML =
+            "*Maximum 20 Character*";
+          return false;
+        }
+      }
+    </script>
+
+    <!-- log in form -->
+    <div class="wrap">
+      <div class="form" style="height: 15em">
+        <h3>Welcome</h3>
+        <div>
+            <form action="./LoginServlet" method="POST" target="_blank" onsubmit=" return doValidation()">
+            <div>
+              <input
+                type="text"
+                class="input"
+                placeholder="User Name"
+                name="user_name"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="password"
+                id="password1"
+                class="input"
+                placeholder="Password"
+                name="password"
+                value=""
+              />
+            </div>
+            <span id="message1" style="color: red"></span>
+            <div class="button"><button type="submit">Log-In</button></div>
+          </form>
+        </div>
+        <figure class="social">
+          <figure>
+            <img src="./images/google-log_in-icon.png" alt="google" />
+          </figure>
+          <figure>
+            <img src="./images/facebook-log_in-icon.png" alt="FaceBook" />
+          </figure>
+          <figure>
+            <img src="./images/instagram-log_in-icon.png" alt="Instagram" />
+          </figure>
+        </figure>
+      </div>
+      <!-- log in form -->
+
+      <h1 style="margin-top: 3em">OR</h1>
+
+      <!-- creater new form -->
+      <div class="form">
+        <h3>Create New</h3>
+        <div>
+            <form action="newUserDetails.jsp" method="GET" target="_blank" onsubmit="return doValidation2()">
+            <div>
+              <input
+                type="text"
+                class="input"
+                placeholder="First Name"
+                name="user_Fname"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                class="input"
+                placeholder="Last Name"
+                name="user_lname"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                class="input"
+                placeholder="Email Address"
+                name="email_address"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="password"
+                id="password2"
+                class="input"
+                placeholder="Password"
+                name="password"
+                value=""
+              />
+            </div>
+            <span id="message2" style="color: red"></span>
+            <div class="button">
+              <button type="submit" class="button">Sign-Up</button>
+            </div>
+          </form>
+        </div>
+        <figure class="social">
+          <figure>
+            <img src="./images/google-log_in-icon.png" alt="google" />
+          </figure>
+          <figure>
+            <img src="./images/facebook-log_in-icon.png" alt="FaceBook" />
+          </figure>
+          <figure>
+            <img src="./images/instagram-log_in-icon.png" alt="Instagram" />
+          </figure>
+        </figure>
+      </div>
+    </div>
+    <!-- creater new form -->
+
+    <!-- footer -->
+    <footer>
+      <div>
+        <div id="top">
+          <a href="#" class="to-top">Top</a>
+        </div>
+        <div class="foot-contact">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img
+                  src="./../images/facebook-footer-icon.svg"
+                  style="width: 30px"
+                  alt="FaceBook"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img
+                  src="./../images/instagram-footer-icon.svg"
+                  style="width: 30px"
+                  alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.twitch.tv/" target="_blank"
+                ><img
+                  src="./../images/twitch-footer-icon.svg"
+                  alt="twitch"
+                  style="width: 30px"
+              /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank"
+                ><img
+                  src="./../images/twitter-footer-icon.svg"
+                  alt="twitter"
+                  style="width: 30px"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/" target="_blank">
+                <div>
+                  <img
+                    src="./../images/youtube-footer-icon.svg"
+                    alt="Youtube"
+                    width=" 30px"
+                  />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="copyright">
+          <p>
+            © 2020 PRORIG –
+            <a href="#" style="text-decoration: none">Terms of Service</a>
+            -
+            <a href="#" style="text-decoration: none">Return Policy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+  </body>
+</html>

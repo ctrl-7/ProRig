@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap");
+/* page intro */
+.title-prorig h1 {
+  font-family: "Jolly Lodger", cursive;
+  color: goldenrod;
+  font-size: 100px;
+  margin: 20px;
+  text-align: center;
+}
+
+.head {
+  margin: 2em;
+}
+.content {
+  text-align: center;
+  font-size: 29px;
+  padding: 20px 400px;
+}
+/* page intro */
+
+/* hyper links */
+.links ul {
+  text-align: center;
+  list-style: none;
+}
+
+.links ul li {
+  display: inline-block;
+  margin: 2em;
+}
+
+.links ul li a {
+  text-decoration: none;
+}
+/* hyper links */
+
+/* products */
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.705);
+  border-radius: 30px;
+  margin: 5em 0;
+}
+
+.inner-container > div {
+  padding: 3em 6em;
+}
+.inner-container > figure {
+  padding: 0 5em;
+  /* padding-top: 3em; */
+  margin: 0 auto;
+}
+
+.config-button {
+  text-align: center;
+  border-radius: 1em;
+  background-color: rgba(31, 30, 30, 0.856);
+  margin: 1em auto;
+  padding: 0.75em;
+  width: 90%;
+  height: 3em;
+}
+.config-button > a {
+  text-decoration: none;
+}
+/* products */
